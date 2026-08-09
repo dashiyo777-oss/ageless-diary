@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7C9473"/>
+      <stop offset="1" stop-color="#5E7357"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+  <circle cx="500" cy="500" r="330" fill="#F4F7EF" opacity="0.13"/>
+
+  <!-- 新芽マーク（中央・大きめ） -->
+  <g fill="none" stroke="#F4F7EF" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M500 740 C500 610 500 510 500 410"/>
+  </g>
+  <g fill="#F4F7EF">
+    <!-- 左の葉 -->
+    <path d="M500 545 C420 545 340 500 306 415 C391 400 465 438 500 512 Z"/>
+    <!-- 右の葉（上・大きめ） -->
+    <path d="M500 462 C568 382 664 360 726 348 C712 433 658 506 566 523 C535 529 513 507 500 462 Z"/>
+  </g>
+  <g stroke="#5E7357" stroke-width="11" stroke-linecap="round" opacity="0.32" fill="none">
+    <path d="M466 494 C420 494 375 470 342 435"/>
+    <path d="M544 492 C594 438 656 410 696 396"/>
+  </g>
+</svg>

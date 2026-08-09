@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7C9473"/>
+      <stop offset="1" stop-color="#5E7357"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景（丸トリミングされても全面グラデーションが見える） -->
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+
+  <!-- 内側の淡い円（安心感のある余白） -->
+  <circle cx="500" cy="470" r="300" fill="#F4F7EF" opacity="0.14"/>
+
+  <!-- 新芽マーク（サイトの🌿と統一） cream色 -->
+  <g fill="none" stroke="#F4F7EF" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 茎 -->
+    <path d="M500 690 C500 560 500 470 500 380"/>
+  </g>
+  <g fill="#F4F7EF">
+    <!-- 左の葉 -->
+    <path d="M500 500 C430 500 360 460 330 385 C405 372 470 405 500 470 Z"/>
+    <!-- 右の葉（上・大きめ） -->
+    <path d="M500 430 C560 360 645 340 700 330 C688 405 640 470 560 485 C532 490 512 470 500 430 Z"/>
+  </g>
+  <!-- 葉脈（軽く） -->
+  <g stroke="#5E7357" stroke-width="10" stroke-linecap="round" opacity="0.35" fill="none">
+    <path d="M470 452 C430 452 390 430 360 400"/>
+    <path d="M540 452 C585 405 640 380 675 368"/>
+  </g>
+
+  <!-- ワードマーク -->
+  <text x="500" y="812" text-anchor="middle" font-family="'Zen Maru Gothic','Hiragino Maru Gothic Pro',sans-serif" font-size="118" font-weight="700" fill="#F4F7EF" letter-spacing="4">ageless</text>
+  <text x="500" y="880" text-anchor="middle" font-family="'Zen Maru Gothic',sans-serif" font-size="40" font-weight="400" fill="#F4F7EF" letter-spacing="16" opacity="0.85">DIARY</text>
+</svg>
